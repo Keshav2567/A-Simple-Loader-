@@ -1,0 +1,265 @@
+body {
+
+    font-size: 15pt; 
+
+    background: #191919;
+
+}
+
+*{
+
+	margin: 0;	padding: 0;
+
+	/* box-sizing: border-box; */
+
+}
+
+.container{
+
+	display: flex;
+
+	height: 50vh;
+
+	width: 95vw;
+
+	/* border: 2px solid black; */
+
+/* 	margin-top: 20px;
+
+	margin-left: 10px;*/
+
+	margin: auto;
+
+	justify-content: center;
+
+	align-items: center;
+
+}
+
+#loading1{
+
+	width: 40%;
+
+	height: 10px;
+
+	border: 2px solid yellow;
+
+	border-left: hidden;
+
+	border-top-left-radius: 20px;
+
+	border-bottom-left-radius: 20px;
+
+	border-right: hidden;
+
+	/* position: relative; */
+
+	animation: loading1 3s ease-in 6s 1;
+
+	animation-fill-mode: forwards;
+
+}
+
+#loading2 {
+
+	width: 40%;
+
+	height: 10px;
+
+	border: 2px solid yellow;
+
+	border-left: hidden;
+
+	border-bottom-right-radius: 20px;
+
+	border-top-right-radius: 20px;
+
+	border-right: hidden;
+
+	/* position: relative; */
+
+	animation: loading2 3s ease-in-out 6s 1;
+
+	animation-fill-mode: forwards;
+
+}
+
+#fill1{
+
+	height: 100%;
+
+	width: 0%;
+
+	animation: fill1 3s ease-in 1;
+
+	animation-fill-mode: forwards;
+
+	border-top-left-radius: 20px;
+
+	border-bottom-left-radius: 20px;
+
+	background-color: gold;
+
+}
+
+#fill2 {
+
+	height: 100%;
+
+	width: 0%;
+
+	animation: fill1 3s ease-out 3s 1;
+
+	animation-fill-mode: forwards;
+
+	background-color: gold;
+
+	border-top-right-radius: 20px;
+
+	border-bottom-right-radius: 20px;
+
+}
+
+@keyframes fill1{
+
+	0%{
+
+		width: 0%;
+
+	}
+
+	
+
+	100%{
+
+		width: 100%;
+
+	}
+
+}
+
+@keyframes fill2{
+
+	0%{
+
+		width: 0%;
+
+	}
+
+	
+
+	100%{
+
+		width: 100%;
+
+	}
+
+}
+
+@keyframes loading1{
+
+	from{
+
+		width: 40%;
+
+	}
+
+	to{
+
+		width: 0%;
+
+	}
+
+}
+
+@keyframes loading2{
+
+	from{
+
+		width: 40%;
+
+	}
+
+	to{
+
+		width: 0%;
+
+	}
+
+}
+
+#para{
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	flex-flow: column;
+
+	margin: auto;
+
+}
+
+p{
+
+	color: gold;
+
+}
+
+#wait{
+
+	animation: wait 9s ease-in-out 9s 1;
+
+	animation-fill-mode: forwards;
+
+	font-size: 40px;
+
+}
+
+.thanks{
+
+	animation: visible 0.2s ease-in-out 9s 1;
+
+	animation-fill-mode: forwards;
+
+	animation-fill-mode: forwards;
+
+	font-size: 0px;
+
+}
+
+@keyframes visible{
+
+	from{
+
+		font-size: 0px;
+
+	}
+
+	
+
+	to{
+
+		font-size: 30px;
+
+	}
+
+}
+
+@keyframes wait {
+
+	from {
+
+		font-size: 0px;
+
+	}
+
+	to {
+
+		font-size: 0px;
+
+	}
+
+}
